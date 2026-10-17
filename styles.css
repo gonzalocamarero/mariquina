@@ -141,6 +141,37 @@ a {
   gap: 0.75rem;
 }
 
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  padding: 2px;
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.32rem 0.62rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  color: var(--text-primary);
+}
+
+.lang-btn.active {
+  background-color: var(--olive-primary);
+  color: #FFFFFF;
+}
+
 .mobile-menu-btn {
   display: none;
   background: transparent;
@@ -344,8 +375,9 @@ a {
 
 .hero-img {
   width: 100%;
-  height: 440px;
+  height: 490px;
   object-fit: cover;
+  object-position: center 75%;
 }
 
 .floating-card {
@@ -564,7 +596,7 @@ a {
 }
 
 .schedule-row.is-today .day-name::after {
-  content: " (Hoy)";
+  content: var(--today-label, " (Hoy)");
   font-size: 0.82rem;
   color: var(--olive-primary);
   font-weight: 700;
