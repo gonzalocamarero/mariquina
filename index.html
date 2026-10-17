@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MariquinA | Restaurante de Comida Tradicional en Badajoz</title>
+  <meta name="description" content="Restaurante MariquinA en Badajoz (Avenida de Elvas 6, Local 22). Cocina tradicional con producto de primera calidad. Contacta por teléfono o WhatsApp." />
+  <meta name="keywords" content="MariquinA, restaurante Badajoz, comida tradicional Badajoz, Avenida de Elvas, restaurante tradicional Extremadura" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.mariquinarestauracion.es/" />
+
+  <!-- Open Graph / Compartir en Redes y WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="MariquinA | Restaurante de Comida Tradicional en Badajoz" />
+  <meta property="og:description" content="Sabores de siempre, producto cuidado y ambiente acogedor en Avenida de Elvas 6, Badajoz. Consulta nuestro horario, ubicación y contacta por WhatsApp." />
+  <meta property="og:url" content="https://www.mariquinarestauracion.es/" />
+  <meta property="og:image" content="https://www.mariquinarestauracion.es/assets/hero.jpg" />
+
+  <!-- Favicon SVG embebido (M de MariquinA en verde oliva) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234A5D23'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-size='36' font-weight='bold' fill='%23FAF8F5'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <!-- Tipografías: Cormorant Garamond (Serif elegante) + Plus Jakarta Sans (Limpia y legible) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- =========================================================================
+       GOOGLE ANALYTICS (OPCIONAL A POSTERIORI)
+       Para activarlo: descomenta las líneas siguientes y sustituye G-XXXXXXXXXX
+       por tu ID de medición real de Google Analytics 4.
+       ========================================================================= -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Datos estructurados Schema.org para posicionamiento local en Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://www.mariquinarestauracion.es/#restaurant",
+    "name": "MariquinA",
+    "alternateName": "MariquinA Restauración",
+    "description": "Restaurante de comida tradicional en Badajoz ubicado en Avenida de Elvas 6, Local 22.",
+    "image": "https://www.mariquinarestauracion.es/assets/hero.jpg",
+    "url": "https://www.mariquinarestauracion.es/",
+    "telephone": "+34924276084",
+    "servesCuisine": ["Cocina Tradicional", "Cocina Española", "Cocina Extremeña"],
+    "priceRange": "€€",
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=MariquinA+Avenida+De+Elvas+6+Local+22+06006+Badajoz+Espa%C3%B1a",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida De Elvas 6, Local 22",
+      "addressLocality": "Badajoz",
+      "addressRegion": "Badajoz",
+      "postalCode": "06006",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.8846,
+      "longitude": -7.0014
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+34-924-27-60-84",
+        "contactType": "reservations",
+        "areaServed": "ES",
+        "availableLanguage": ["Spanish"]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+34-627-41-27-91",
+        "contactType": "customer service",
+        "url": "https://wa.me/34627412791",
+        "availableLanguage": ["Spanish"]
+      }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "11:30",
+        "closes": "23:59"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "11:30",
+        "closes": "17:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand-logo" aria-label="MariquinA Inicio">
+        <span class="brand-cap">M</span>ariquin<span class="brand-cap">A</span>
+        <span class="brand-sub">Restauración</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#contacto-horario" class="nav-link">Contacto y Horario</a>
+        <a href="#ubicacion" class="nav-link">Ubicación</a>
+        <a href="#resenas" class="nav-link">Reseñas</a>
+      </nav>
+
+      <div class="header-actions">
+        <a
+          href="https://wa.me/34627412791?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20hacer%20una%20consulta"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-whatsapp btn-sm"
+        >
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.93-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .4.003.57.01.18.01.43-.07.67.51.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.58.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.71.81 2 .95.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Presentación -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill" id="liveStatusBadge">
+            <span class="status-dot" id="liveStatusDot"></span>
+            <span id="liveStatusText">Comida Tradicional en Badajoz</span>
+          </div>
+
+          <h1 class="hero-title">
+            El sabor de la tradición en <span class="brand-inline"><span class="brand-cap">M</span>ariquin<span class="brand-cap">A</span></span>
+          </h1>
+
+          <p class="hero-description">
+            Cocina tradicional elaborada con mimo, producto de cercanía y el trato cercano de siempre en Badajoz. Un rincón luminoso y acogedor donde disfrutar de la buena mesa.
+          </p>
+
+          <div class="hero-cta-group">
+            <a
+              href="https://wa.me/34627412791?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20contactar%20con%20vosotros"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp btn-lg"
+            >
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.93-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .4.003.57.01.18.01.43-.07.67.51.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.58.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.71.81 2 .95.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/>
+              </svg>
+              Contactar por WhatsApp
+            </a>
+
+            <a href="tel:+34924276084" class="btn btn-outline btn-lg">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              +34 924 27 60 84
+            </a>
+          </div>
+
+          <div class="hero-quick-info">
+            <div class="quick-item">
+              <svg class="icon-accent" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              <span>Avenida De Elvas 6, Local 22 · 06006 Badajoz</span>
+            </div>
+            <div class="quick-item">
+              <svg class="icon-accent" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+              </svg>
+              <span>Mar – Sáb: 11:30 a 0:00 · Dom noche y Lun cerrado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="image-frame">
+            <img
+              src="assets/hero.jpg"
+              alt="Mesa tradicional en el restaurante MariquinA en Badajoz"
+              class="hero-img"
+              width="800"
+              height="450"
+            />
+            <div class="floating-card">
+              <span class="floating-tag">Badajoz · Extremadura</span>
+              <strong>Cocina de Raíz y Tradición</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto y Horario -->
+    <section class="section section-alt" id="contacto-horario">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Atención Cercana</span>
+          <h2 class="section-title">Contacto y Horario</h2>
+          <p class="section-subtitle">
+            Llámanos por teléfono o escríbenos directamente por WhatsApp para cualquier consulta o reserva.
+          </p>
+        </div>
+
+        <div class="contact-schedule-grid">
+          <!-- Columna de canales de contacto -->
+          <div class="contact-cards">
+            <!-- Tarjeta WhatsApp -->
+            <div class="info-card card-highlight">
+              <div class="card-icon whatsapp-bg">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.93-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .4.003.57.01.18.01.43-.07.67.51.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.58.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.71.81 2 .95.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/>
+                </svg>
+              </div>
+              <div class="card-body">
+                <span class="card-label">WhatsApp Directo</span>
+                <h3 class="card-value">+34 627 41 27 91</h3>
+                <p class="card-note">Respuesta rápida por mensaje de WhatsApp.</p>
+                <div class="card-actions">
+                  <a
+                    href="https://wa.me/34627412791?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20realizar%20una%20consulta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-whatsapp"
+                  >
+                    Abrir chat en WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta Teléfono -->
+            <div class="info-card">
+              <div class="card-icon olive-bg">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <div class="card-body">
+                <span class="card-label">Teléfono del Restaurante</span>
+                <h3 class="card-value">+34 924 27 60 84</h3>
+                <p class="card-note">Atención telefónica durante nuestro horario de apertura.</p>
+                <div class="card-actions">
+                  <a href="tel:+34924276084" class="btn btn-primary">
+                    Llamar ahora
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-ghost copy-btn"
+                    data-copy="+34 924 27 60 84"
+                    aria-label="Copiar número de teléfono"
+                  >
+                    Copiar teléfono
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna de Horario -->
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <div>
+                <span class="card-label">Horario Semanal</span>
+                <h3 class="schedule-title">Nuestras Horas de Apertura</h3>
+              </div>
+              <span class="schedule-badge">Badajoz</span>
+            </div>
+
+            <ul class="schedule-list" id="scheduleList">
+              <li class="schedule-row" data-day="2">
+                <span class="day-name">Martes</span>
+                <span class="day-dots"></span>
+                <span class="day-hours">11:30 – 0:00</span>
+              </li>
+              <li class="schedule-row" data-day="3">
+                <span class="day-name">Miércoles</span>
+                <span class="day-dots"></span>
+                <span class="day-hours">11:30 – 0:00</span>
+              </li>
+              <li class="schedule-row" data-day="4">
+                <span class="day-name">Jueves</span>
+                <span class="day-dots"></span>
+                <span class="day-hours">11:30 – 0:00</span>
+              </li>
+              <li class="schedule-row" data-day="5">
+                <span class="day-name">Viernes</span>
+                <span class="day-dots"></span>
+                <span class="day-hours">11:30 – 0:00</span>
+              </li>
+              <li class="schedule-row" data-day="6">
+                <span class="day-name">Sábado</span>
+                <span class="day-dots"></span>
+                <span class="day-hours">11:30 – 0:00</span>
+              </li>
+              <li class="schedule-row" data-day="0">
+                <span class="day-name">Domingo</span>
+                <span class="day-dots"></span>
+                <span class="day-hours day-partial">Mediodía abierto · <strong>Noche cerrado</strong></span>
+              </li>
+              <li class="schedule-row day-closed" data-day="1">
+                <span class="day-name">Lunes</span>
+                <span class="day-dots"></span>
+                <span class="day-hours">Cerrado por descanso</span>
+              </li>
+            </ul>
+
+            <div class="schedule-footer-note">
+              <svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+              </svg>
+              <span>De martes a sábado horario continuo de 11:30 a 0:00. Domingo noche y lunes cerrado.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Ubicación -->
+    <section class="section" id="ubicacion">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Dónde Estamos</span>
+          <h2 class="section-title">Nuestra Ubicación en Badajoz</h2>
+          <p class="section-subtitle">
+            Te esperamos en la Avenida de Elvas, en una zona cómoda y de fácil acceso en Badajoz.
+          </p>
+        </div>
+
+        <div class="location-wrapper">
+          <div class="location-details">
+            <div class="address-box">
+              <span class="card-label">Dirección Postal</span>
+              <h3 class="address-title">
+                <span class="brand-cap">M</span>ariquin<span class="brand-cap">A</span>
+              </h3>
+              <address class="address-text">
+                Avenida De Elvas 6, LOCAL 22<br />
+                06006 Badajoz (Badajoz)<br />
+                España
+              </address>
+
+              <div class="location-buttons">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=MariquinA+Avenida+De+Elvas+6+Local+22+06006+Badajoz+Espa%C3%B1a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M21.71 11.29l-9-9a.996.996 0 00-1.41 0l-9 9a.996.996 0 000 1.41l9 9c.39.39 1.02.39 1.41 0l9-9a.996.996 0 000-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/>
+                  </svg>
+                  Cómo llegar en Google Maps
+                </a>
+
+                <button
+                  type="button"
+                  class="btn btn-ghost copy-btn"
+                  data-copy="Avenida De Elvas 6, LOCAL 22, 06006 Badajoz, España"
+                >
+                  Copiar dirección
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              title="Mapa de ubicación de Restaurante MariquinA en Avenida de Elvas 6, Badajoz"
+              src="https://maps.google.com/maps?q=Avenida%20De%20Elvas%206%2C%2006006%20Badajoz%2C%20Espa%C3%B1a&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Reseñas de Google -->
+    <section class="section section-alt" id="resenas">
+      <div class="container">
+        <div class="reviews-top-bar">
+          <div class="reviews-heading">
+            <span class="eyebrow">Opiniones de Clientes</span>
+            <h2 class="section-title">Lo que dicen de <span class="brand-cap">M</span>ariquin<span class="brand-cap">A</span></h2>
+          </div>
+
+          <div class="google-summary-card">
+            <div class="google-logo-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.11-6.72-4.96H1.29v3.14C3.26 21.3 7.31 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.24c-.24-.72-.38-1.49-.38-2.24s.14-1.52.38-2.24V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.99-3.14z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.99 3.14c.95-2.85 3.6-4.96 6.72-4.96z"/>
+              </svg>
+            </div>
+            <div class="google-score-info">
+              <div class="score-row">
+                <strong class="score-number">4.8</strong>
+                <div class="stars" aria-label="Valoración de 4.8 sobre 5 estrellas">
+                  ★★★★★
+                </div>
+              </div>
+              <span class="score-caption">Reseñas en Google Maps</span>
+            </div>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=MariquinA+Avenida+De+Elvas+6+Badajoz"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline btn-sm"
+            >
+              Ver en Google
+            </a>
+          </div>
+        </div>
+
+        <!-- Contenedor dinámico de tarjetas de reseñas (editable en script.js) -->
+        <div class="reviews-grid" id="reviewsContainer"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-logo footer-logo">
+          <span class="brand-cap">M</span>ariquin<span class="brand-cap">A</span>
+        </span>
+        <p class="footer-tagline">Restaurante de comida tradicional en Badajoz.</p>
+      </div>
+
+      <div class="footer-contact">
+        <p><strong>Dirección:</strong> Avenida De Elvas 6, LOCAL 22 · 06006 Badajoz (España)</p>
+        <p>
+          <strong>Teléfono:</strong> <a href="tel:+34924276084">+34 924 27 60 84</a> ·
+          <strong>WhatsApp:</strong> <a href="https://wa.me/34627412791" target="_blank" rel="noopener noreferrer">+34 627 41 27 91</a>
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="currentYear"></span> MariquinA Restauración · www.mariquinarestauracion.es</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a
+    href="https://wa.me/34627412791?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20hacer%20una%20consulta"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="floating-whatsapp"
+    aria-label="Contactar por WhatsApp con MariquinA"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.93-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .4.003.57.01.18.01.43-.07.67.51.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.58.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.71.81 2 .95.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/>
+    </svg>
+    <span class="floating-whatsapp-label">WhatsApp</span>
+  </a>
+
+  <!-- Notificación Toast para copiar teléfono/dirección -->
+  <div class="toast" id="copyToast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
