@@ -88,12 +88,6 @@
         "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "opens": "11:30",
         "closes": "23:59"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "11:30",
-        "closes": "17:00"
       }
     ]
   }
@@ -194,7 +188,7 @@
               <svg class="icon-accent" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
               </svg>
-              <span data-i18n="hero_quick_hours">Mar – Sáb: 11:30 a 0:00 · Dom noche y Lun cerrado</span>
+              <span data-i18n="hero_quick_hours">Mar – Sáb: 11:30 a 0:00 · Dom y Lun cerrado</span>
             </div>
           </div>
         </div>
@@ -320,10 +314,10 @@
                 <span class="day-dots"></span>
                 <span class="day-hours">11:30 – 0:00</span>
               </li>
-              <li class="schedule-row" data-day="0">
+              <li class="schedule-row day-closed" data-day="0">
                 <span class="day-name" data-i18n="day_sun">Domingo</span>
                 <span class="day-dots"></span>
-                <span class="day-hours day-partial" data-i18n-html="sunday_hours">Mediodía abierto · <strong>Noche cerrado</strong></span>
+                <span class="day-hours" data-i18n="sunday_hours">Cerrado por descanso</span>
               </li>
               <li class="schedule-row day-closed" data-day="1">
                 <span class="day-name" data-i18n="day_mon">Lunes</span>
@@ -336,7 +330,7 @@
               <svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
               </svg>
-              <span data-i18n="schedule_footer">De martes a sábado horario continuo de 11:30 a 0:00. Domingo noche y lunes cerrado.</span>
+              <span data-i18n="schedule_footer">De martes a sábado horario continuo de 11:30 a 0:00. Domingo y lunes cerrado.</span>
             </div>
           </div>
         </div>

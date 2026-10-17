@@ -19,7 +19,7 @@ const TRANSLATIONS = {
     hero_desc:
       "Cocina tradicional elaborada con mimo, producto de cercanía y el trato cercano de siempre en Badajoz. Un rincón luminoso y acogedor con terraza donde disfrutar de la buena mesa.",
     hero_cta_whatsapp: "Contactar por WhatsApp",
-    hero_quick_hours: "Mar – Sáb: 11:30 a 0:00 · Dom noche y Lun cerrado",
+    hero_quick_hours: "Mar – Sáb: 11:30 a 0:00 · Dom y Lun cerrado",
     hero_floating_title: "Cocina de Raíz y Tradición",
     contact_eyebrow: "Atención Cercana",
     contact_title: "Contacto y Horario",
@@ -41,10 +41,10 @@ const TRANSLATIONS = {
     day_sat: "Sábado",
     day_sun: "Domingo",
     day_mon: "Lunes",
-    sunday_hours: "Mediodía abierto · <strong>Noche cerrado</strong>",
+    sunday_hours: "Cerrado por descanso",
     monday_hours: "Cerrado por descanso",
     schedule_footer:
-      "De martes a sábado horario continuo de 11:30 a 0:00. Domingo noche y lunes cerrado.",
+      "De martes a sábado horario continuo de 11:30 a 0:00. Domingo y lunes cerrado.",
     loc_eyebrow: "Dónde Estamos",
     loc_title: "Nuestra Ubicación en Badajoz",
     loc_subtitle:
@@ -64,8 +64,7 @@ const TRANSLATIONS = {
     today_suffix: ' " (Hoy)"',
     status_open_week: "Abierto ahora · Hoy de 11:30 a 0:00",
     status_closed_week: "Cerrado ahora · Abrimos de 11:30 a 0:00",
-    status_open_sun: "Abierto este mediodía · Domingo noche cerrado",
-    status_closed_sun: "Domingo noche y lunes cerrado · Abrimos martes 11:30",
+    status_closed_sun: "Hoy domingo cerrado · Abrimos martes de 11:30 a 0:00",
     status_closed_mon: "Hoy lunes cerrado · Abrimos martes de 11:30 a 0:00"
   },
   en: {
@@ -77,7 +76,7 @@ const TRANSLATIONS = {
     hero_desc:
       "Traditional Spanish cuisine crafted with care, local ingredients and warm hospitality in Badajoz. A bright, welcoming spot with an outdoor terrace to enjoy great food.",
     hero_cta_whatsapp: "Contact via WhatsApp",
-    hero_quick_hours: "Tue – Sat: 11:30 to 0:00 · Sun night & Mon closed",
+    hero_quick_hours: "Tue – Sat: 11:30 to 0:00 · Sun & Mon closed",
     hero_floating_title: "Traditional Local Cuisine",
     contact_eyebrow: "Get in Touch",
     contact_title: "Contact & Opening Hours",
@@ -99,10 +98,10 @@ const TRANSLATIONS = {
     day_sat: "Saturday",
     day_sun: "Sunday",
     day_mon: "Monday",
-    sunday_hours: "Open midday · <strong>Closed Sunday night</strong>",
+    sunday_hours: "Closed (Weekly rest)",
     monday_hours: "Closed (Weekly rest)",
     schedule_footer:
-      "Tuesday to Saturday open all day from 11:30 to midnight (0:00). Closed Sunday night and Monday.",
+      "Tuesday to Saturday open all day from 11:30 to midnight (0:00). Closed Sunday and Monday.",
     loc_eyebrow: "Find Us",
     loc_title: "Our Location in Badajoz",
     loc_subtitle:
@@ -122,8 +121,7 @@ const TRANSLATIONS = {
     today_suffix: ' " (Today)"',
     status_open_week: "Open now · Today from 11:30 to 0:00",
     status_closed_week: "Closed now · Open 11:30 to 0:00",
-    status_open_sun: "Open this midday · Closed Sunday night",
-    status_closed_sun: "Closed Sunday night & Monday · Opens Tuesday 11:30",
+    status_closed_sun: "Closed on Sundays · Opens Tuesday 11:30 to 0:00",
     status_closed_mon: "Closed on Mondays · Opens Tuesday 11:30 to 0:00"
   }
 };
@@ -238,7 +236,6 @@ function updateScheduleAndLiveStatus() {
   const currentMinutes = hour * 60 + minute;
   const openTime = 11 * 60 + 30;
   const closeTimeWeek = 24 * 60;
-  const closeTimeSunday = 17 * 60;
 
   let isOpen = false;
   let statusText = "";
@@ -252,13 +249,8 @@ function updateScheduleAndLiveStatus() {
       statusText = t.status_closed_week;
     }
   } else if (dayIndex === 0) {
-    if (currentMinutes >= openTime && currentMinutes < closeTimeSunday) {
-      isOpen = true;
-      statusText = t.status_open_sun;
-    } else {
-      isOpen = false;
-      statusText = t.status_closed_sun;
-    }
+    isOpen = false;
+    statusText = t.status_closed_sun;
   } else {
     isOpen = false;
     statusText = t.status_closed_mon;
