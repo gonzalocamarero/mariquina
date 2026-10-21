@@ -53,13 +53,48 @@
     "@id": "https://www.mariquinarestauracion.es/#restaurant",
     "name": "MariquinA",
     "alternateName": "MariquinA Restauración",
-    "description": "Restaurante de comida tradicional en Badajoz ubicado en Avenida de Elvas 6, Local 22.",
+    "description": "Restaurante de comida tradicional en Badajoz ubicado en Avenida de Elvas 6, Local 22. Ibéricos de bellota Maldonado, carnes seleccionadas, pescados frescos, arroces por encargo y menú diario.",
     "image": "https://www.mariquinarestauracion.es/assets/hero.jpg",
     "url": "https://www.mariquinarestauracion.es/",
     "telephone": "+34924276084",
-    "servesCuisine": ["Cocina Tradicional", "Cocina Española", "Cocina Extremeña"],
+    "servesCuisine": [
+      "Cocina Tradicional",
+      "Cocina Extremeña",
+      "Cocina Española",
+      "Ibéricos de Bellota Maldonado",
+      "Carnes Ibéricas",
+      "Pescados y Mariscos",
+      "Arroces"
+    ],
     "priceRange": "€€",
     "hasMap": "https://www.google.com/maps/search/?api=1&query=MariquinA+Avenida+De+Elvas+6+Local+22+06006+Badajoz+Espa%C3%B1a",
+    "hasMenu": "https://www.mariquinarestauracion.es/#carta",
+    "paymentAccepted": ["Cash", "Credit Card"],
+    "currenciesAccepted": "EUR",
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Terraza exterior acondicionada",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Climatización interior",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Aparcamiento gratuito en la zona",
+        "value": true
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "124",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Avenida De Elvas 6, Local 22",
@@ -99,6 +134,64 @@
     ]
   }
   </script>
+
+  <!-- Datos estructurados FAQPage para Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Es necesario reservar mesa en Restaurante MariquinA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es aconsejable reservar con antelación, especialmente para fines de semana, celebraciones o para solicitar nuestros arroces por encargo. Puedes contactar de forma directa por WhatsApp al +34 667 60 73 06 o llamando al +34 924 27 60 84."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dispone el restaurante de terraza exterior en Badajoz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, disponemos de una amplia y cómoda terraza exterior en la Avenida de Elvas, acondicionada tanto para comidas al mediodía como para cenas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo funciona el servicio de arroces por encargo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nuestros arroces (arroz de marisco, arroz negro con sepia y paella de marisco) se cocinan al momento con producto fresco y se elaboran por encargo para un mínimo de 2 personas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Ofrece MariquinA menú del día entre semana?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, ofrecemos menú diario de martes a viernes a mediodía (excepto días festivos), con platos caseros variados de cocina tradicional y producto de temporada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es fácil aparcar cerca de Restaurante MariquinA en la Avenida de Elvas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, la zona de la Avenida de Elvas 6 cuenta con amplias áreas de aparcamiento público y cómodo en las inmediaciones del restaurante."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde está ubicado MariquinA en Badajoz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Estamos en la Avenida De Elvas 6, Local 22 (06006 Badajoz), a pocos minutos del Hospital Universitario de Badajoz y del Campus Universitario de la UEx."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -111,8 +204,10 @@
       </a>
 
       <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#carta" class="nav-link" data-i18n="nav_menu">Carta</a>
         <a href="#contacto-horario" class="nav-link" data-i18n="nav_contact">Contacto y Horario</a>
         <a href="#ubicacion" class="nav-link" data-i18n="nav_location">Ubicación</a>
+        <a href="#faq" class="nav-link" data-i18n="nav_faq">Preguntas Frecuentes</a>
         <a href="#resenas" class="nav-link" data-i18n="nav_reviews">Reseñas</a>
       </nav>
 
@@ -124,7 +219,7 @@
         </div>
 
         <a
-          href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20hacer%20una%20consulta"
+          href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20una%20mesa"
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn-whatsapp btn-sm"
@@ -132,7 +227,7 @@
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
             <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.93-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .4.003.57.01.18.01.43-.07.67.51.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.58.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.71.81 2 .95.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/>
           </svg>
-          <span>WhatsApp</span>
+          <span data-i18n="btn_book_table_short">Reservar</span>
         </a>
 
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false">
@@ -160,12 +255,12 @@
           </h1>
 
           <p class="hero-description" data-i18n="hero_desc">
-            Cocina tradicional elaborada con mimo, producto de cercanía y el trato cercano de siempre en Badajoz. Un rincón luminoso y acogedor con terraza donde disfrutar de la buena mesa.
+            Cocina tradicional con producto de primera calidad en Badajoz: ibéricos de bellota Maldonado, carnes seleccionadas, pescados frescos y arroces por encargo. Situado en la Avenida de Elvas, junto al Hospital Universitario y el campus de la UEx, con terraza exterior y fácil aparcamiento.
           </p>
 
           <div class="hero-cta-group">
             <a
-              href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20contactar%20con%20vosotros"
+              href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20una%20mesa"
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-whatsapp btn-lg"
@@ -173,7 +268,11 @@
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.93-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .4.003.57.01.18.01.43-.07.67.51.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.58.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.71.81 2 .95.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/>
               </svg>
-              <span data-i18n="hero_cta_whatsapp">Contactar por WhatsApp</span>
+              <span data-i18n="hero_cta_whatsapp">Reservar mesa por WhatsApp</span>
+            </a>
+
+            <a href="#carta" class="btn btn-primary btn-lg">
+              <span data-i18n="hero_cta_menu">Ver Carta y Platos</span>
             </a>
 
             <a href="tel:+34924276084" class="btn btn-outline btn-lg">
@@ -189,7 +288,7 @@
               <svg class="icon-accent" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
               </svg>
-              <span>Avenida De Elvas 6, Local 22 · 06006 Badajoz</span>
+              <span data-i18n="hero_quick_addr">Avda. De Elvas 6, Local 22 (Junto a UEx y Hospital) · 06006 Badajoz</span>
             </div>
             <div class="quick-item">
               <svg class="icon-accent" viewBox="0 0 24 24" aria-hidden="true">
@@ -208,11 +307,237 @@
               class="hero-img"
               width="800"
               height="600"
+              fetchpriority="high"
+              decoding="async"
             />
             <div class="floating-card">
               <span class="floating-tag">Badajoz · Extremadura</span>
               <strong data-i18n="hero_floating_title">Cocina de Raíz y Tradición</strong>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Carta y Especialidades -->
+    <section class="section" id="carta">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="menu_eyebrow">Nuestra Cocina</span>
+          <h2 class="section-title" data-i18n="menu_title">Carta y Especialidades</h2>
+          <p class="section-subtitle" data-i18n="menu_subtitle">
+            Producto selecto, ibéricos de bellota Maldonado, pescados frescos, carnes a la plancha y arroces cocinados al momento en Badajoz.
+          </p>
+        </div>
+
+        <!-- Filtros interactivos -->
+        <div class="menu-filters" role="tablist" aria-label="Categorías de la carta">
+          <button type="button" class="menu-filter-btn active" data-filter="all" data-i18n="filter_all">Todos los Platos</button>
+          <button type="button" class="menu-filter-btn" data-filter="ibericos" data-i18n="filter_ibericos">Ibéricos Maldonado</button>
+          <button type="button" class="menu-filter-btn" data-filter="carnes" data-i18n="filter_carnes">Carnes</button>
+          <button type="button" class="menu-filter-btn" data-filter="pescados" data-i18n="filter_pescados">Pescados y Mariscos</button>
+          <button type="button" class="menu-filter-btn" data-filter="entrantes" data-i18n="filter_entrantes">Revueltos y Entrantes</button>
+          <button type="button" class="menu-filter-btn" data-filter="huerta" data-i18n="filter_huerta">De la Huerta</button>
+          <button type="button" class="menu-filter-btn" data-filter="arroces" data-i18n="filter_arroces">Arroces</button>
+        </div>
+
+        <!-- Rejilla de Categorías -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Ibéricos -->
+          <div class="menu-category-card" data-category="ibericos">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title" data-i18n="cat_ibericos">Ibéricos de Bellota</h3>
+              <span class="menu-badge menu-badge-maldonado">Maldonado</span>
+            </div>
+            <ul class="menu-items-list">
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_jamon">Jamón Ibérico de Bellota (Maldonado)</span>
+                <span class="menu-badge menu-badge-olive" data-i18n="tag_specialty">Especialidad</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_lomo">Lomo Ibérico de Bellota (Maldonado)</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_surtido">Surtido de Ibéricos de Bellota (Maldonado)</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_queso">Queso de Oveja Curado</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Carnes -->
+          <div class="menu-category-card" data-category="carnes">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title" data-i18n="cat_carnes">Carnes Seleccionadas</h3>
+              <span class="menu-badge" data-i18n="tag_grill">Brasa / Plancha</span>
+            </div>
+            <ul class="menu-items-list">
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_solomillo">Solomillo ibérico a la plancha</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_pluma">Pluma ibérica a la plancha</span>
+                <span class="menu-badge menu-badge-olive" data-i18n="tag_recommended">Recomendado</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_entrecot">Entrecot de ternera a la plancha</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_cachopo">Cachopo de ternera</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_carrilleras">Carrilleras ibéricas en salsa</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_torreznos">Torreznos de Soria</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_pollo">Filete de pollo (plancha o empanado)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pescados y Mariscos -->
+          <div class="menu-category-card" data-category="pescados">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title" data-i18n="cat_pescados">Pescados y Mariscos</h3>
+              <span class="menu-badge" data-i18n="tag_fresh">Producto Fresco</span>
+            </div>
+            <ul class="menu-items-list">
+              <li class="menu-subgroup-title" data-i18n="subcat_plancha">A la Plancha y en Salsa</li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_bacalao_arriero">Bacalao al arriero</span>
+                <span class="menu-badge menu-badge-olive" data-i18n="tag_traditional">Tradición</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_atun">Atún a la plancha</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_lubina">Lubina a la plancha</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_sepia">Sepia y Calamaritos</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_gambones">Gambones a la plancha / al ajillo</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_almejas">Almejas marineras</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_pulpo">Pulpo a la gallega</span>
+              </li>
+              <li class="menu-subgroup-title" data-i18n="subcat_fritura">Fritura Andaluza</li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_fritura">Fritura variada de pescado</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_calamares_fritos">Calamares, Puntillitas y Boquerones fritos</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Revueltos y Entrantes -->
+          <div class="menu-category-card" data-category="entrantes">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title" data-i18n="cat_revueltos">Revueltos y Entrantes</h3>
+              <span class="menu-badge menu-badge-olive" data-i18n="tag_popular">Imprescindibles</span>
+            </div>
+            <ul class="menu-items-list">
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_bacalao_dorado">Bacalao Dorado</span>
+                <span class="menu-badge menu-badge-olive" data-i18n="tag_star">Plato Estrella</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_revuelto_trigueros">Revuelto de trigueros con jamón ibérico y gambas</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_revuelto_espinacas">Revuelto de espinacas con almejas y gambas al queso</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_bolsitas">Bolsitas crujientes con queso y gambas</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_croquetas">Surtido de croquetas caseras</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_champinones">Champiñones naturales a la plancha con queso cremoso y jamón</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_tartar">Tartar de atún</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_gambas_blancas">Gambas blancas cocidas</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_cuchara">Gazpacho, Salmorejo con jamón o Sopa casera</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- De la Huerta -->
+          <div class="menu-category-card" data-category="huerta">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title" data-i18n="cat_huerta">De la Huerta</h3>
+              <span class="menu-badge" data-i18n="tag_healthy">Frescura</span>
+            </div>
+            <ul class="menu-items-list">
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_ensalada_pimientos">Ensalada de pimientos asados con bacalao</span>
+                <span class="menu-badge menu-badge-olive" data-i18n="tag_recommended">Recomendado</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_ensalada_cogollos">Cogollos a la plancha con queso azul y cebolla crujiente</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_ensalada_mixta">Ensalada Mixta tradicional</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Arroces por Encargo -->
+          <div class="menu-category-card" data-category="arroces">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title" data-i18n="cat_arroces">Arroces al Momento</h3>
+              <span class="menu-badge menu-badge-olive" data-i18n="tag_preorder">Por Encargo (Mín. 2 pers.)</span>
+            </div>
+            <ul class="menu-items-list">
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_arroz_marisco">Arroz de marisco caldoso / meloso</span>
+                <span class="menu-badge menu-badge-olive" data-i18n="tag_specialty">Especialidad</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_arroz_negro">Arroz negro con sepia y alioli</span>
+              </li>
+              <li class="menu-item-row">
+                <span class="menu-item-name" data-i18n="dish_paella_marisco">Paella tradicional de marisco</span>
+              </li>
+            </ul>
+            <div class="menu-subgroup">
+              <p class="card-note" style="margin-bottom: 0.75rem;" data-i18n="rice_note">
+                Cocinado al momento. Aconsejamos reservar tu arroz con antelación vía WhatsApp o teléfono.
+              </p>
+              <a href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20encargar%20un%20arroz%20para%20el%20d%C3%ADa..." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                <span data-i18n="btn_order_rice">Encargar arroz por WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner Menú Diario -->
+        <div class="daily-menu-banner">
+          <div class="daily-menu-content">
+            <span class="daily-menu-tag" data-i18n="menu_daily_tag">Martes a Viernes (Mediodía)</span>
+            <h3 data-i18n="menu_daily_title">Menú Diario Casero</h3>
+            <p data-i18n="menu_daily_desc">
+              De martes a viernes a mediodía (excepto festivos) disponemos de nuestro menú del día con variedad de primeros y segundos platos tradicionales, pan, bebida y postre. Cocina de mercado recién hecha.
+            </p>
+          </div>
+          <div class="daily-menu-actions">
+            <a href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20consultar%20el%20men%C3%BA%20del%20d%C3%ADa%20de%20hoy" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <span data-i18n="btn_ask_menu">Consultar menú de hoy</span>
+            </a>
           </div>
         </div>
       </div>
@@ -351,7 +676,7 @@
           <span class="eyebrow" data-i18n="loc_eyebrow">Dónde Estamos</span>
           <h2 class="section-title" data-i18n="loc_title">Nuestra Ubicación en Badajoz</h2>
           <p class="section-subtitle" data-i18n="loc_subtitle">
-            Te esperamos en la Avenida de Elvas, en una zona cómoda y de fácil acceso en Badajoz.
+            Te esperamos en la Avenida de Elvas 6, Local 22 (Badajoz), en una zona amplia con fácil aparcamiento, a pocos minutos de la Universidad de Extremadura (UEx) y el Hospital Universitario.
           </p>
         </div>
 
@@ -364,6 +689,7 @@
               </h3>
               <address class="address-text">
                 Avenida De Elvas 6, LOCAL 22<br />
+                <span style="font-size: 0.95em; color: var(--text-muted);" data-i18n="loc_landmark">(Junto a la Universidad y Hospital Universitario)</span><br />
                 06006 Badajoz (Badajoz)<br />
                 <span data-i18n="loc_country">España</span>
               </address>
@@ -402,6 +728,81 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="faq_eyebrow">Resolvemos tus dudas</span>
+          <h2 class="section-title" data-i18n="faq_title">Preguntas Frecuentes</h2>
+          <p class="section-subtitle" data-i18n="faq_subtitle">
+            Información práctica sobre reservas, terraza, aparcamiento y nuestra cocina en Badajoz.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span data-i18n="faq_q1">¿Es necesario reservar mesa en Restaurante MariquinA?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq_a1">Es muy recomendable reservar con antelación, especialmente para comidas y cenas en fin de semana, grupos o si deseas degustar nuestros arroces por encargo. Puedes reservar en segundos por WhatsApp (+34 667 60 73 06) o por teléfono (+34 924 27 60 84).</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span data-i18n="faq_q2">¿Dispone el restaurante de terraza exterior en la Avenida de Elvas?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq_a2">Sí, contamos con una amplia terraza exterior acondicionada, ideal para disfrutar del clima de Badajoz tanto para el aperitivo y almuerzo como para cenas al aire libre.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span data-i18n="faq_q3">¿Cómo funciona el servicio de arroces y paellas por encargo?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq_a3">Elaboramos arroz de marisco (caldoso o meloso), arroz negro con sepia y paella de marisco con producto fresco y cocinado al momento. Se preparan exclusivamente por encargo para un mínimo de 2 personas con reserva previa.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span data-i18n="faq_q4">¿Tenéis menú del día entre semana?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq_a4">Sí, de martes a viernes a mediodía (no festivos) ofrecemos nuestro menú diario casero con primeros y segundos a elegir, pan, bebida y postre, elaborado con producto de mercado.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span data-i18n="faq_q5">¿Es fácil aparcar cerca de MariquinA en Badajoz?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq_a5">Sí, la zona de la Avenida de Elvas 6 cuenta con amplias avenidas y zonas de aparcamiento público cómodo y gratuito en las inmediaciones del restaurante.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span data-i18n="faq_q6">¿Dónde está ubicado exactamente el restaurante?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq_a6">Estamos en la Avenida De Elvas 6, Local 22 (06006 Badajoz). Una ubicación privilegiada a pocos minutos del Hospital Universitario de Badajoz y el campus de la Universidad de Extremadura (UEx).</p>
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -479,11 +880,11 @@
 
   <!-- Botón flotante de WhatsApp -->
   <a
-    href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20hacer%20una%20consulta"
+    href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20una%20mesa"
     target="_blank"
     rel="noopener noreferrer"
     class="floating-whatsapp"
-    aria-label="Contactar por WhatsApp con MariquinA"
+    aria-label="Reservar mesa por WhatsApp con MariquinA"
   >
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.93-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .4.003.57.01.18.01.43-.07.67.51.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.58.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.71.81 2 .95.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/>

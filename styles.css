@@ -816,6 +816,260 @@ a {
 }
 
 /* ==========================================================================
+   Carta y Especialidades
+   ========================================================================== */
+.menu-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.menu-filter-btn {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.5rem 1.05rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-filter-btn:hover {
+  border-color: var(--olive-primary);
+  color: var(--olive-primary);
+}
+
+.menu-filter-btn.active {
+  background-color: var(--olive-primary);
+  color: #FFFFFF;
+  border-color: var(--olive-primary);
+  box-shadow: 0 4px 12px rgba(74, 93, 35, 0.2);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  align-items: start;
+}
+
+.menu-category-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-category-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.menu-category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.15rem;
+  border-bottom: 2px solid var(--olive-soft);
+}
+
+.menu-category-title {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  color: var(--olive-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.menu-badge {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  background-color: var(--earth-soft);
+  color: var(--earth-accent);
+  white-space: nowrap;
+}
+
+.menu-badge-olive {
+  background-color: var(--olive-soft);
+  color: var(--olive-primary);
+}
+
+.menu-badge-maldonado {
+  background-color: #FBF0D9;
+  color: #9E6B15;
+  border: 1px solid rgba(158, 107, 21, 0.25);
+}
+
+.menu-items-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.menu-item-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.98rem;
+  color: var(--text-primary);
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed rgba(228, 224, 214, 0.5);
+}
+
+.menu-item-row:last-child {
+  border-bottom: none;
+}
+
+.menu-item-name {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.menu-subgroup {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.menu-subgroup-title {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--earth-accent);
+  font-weight: 700;
+  margin-bottom: 0.65rem;
+}
+
+/* Banner de Menú Diario */
+.daily-menu-banner {
+  margin-top: 2.25rem;
+  background: linear-gradient(135deg, var(--olive-dark) 0%, #3D4E1C 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: 2rem 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: 0 12px 28px rgba(46, 59, 21, 0.2);
+}
+
+.daily-menu-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  margin-bottom: 0.35rem;
+  color: #FAF8F5;
+}
+
+.daily-menu-content p {
+  font-size: 0.98rem;
+  color: #DDE5D1;
+  max-width: 650px;
+}
+
+.daily-menu-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background-color: var(--earth-accent);
+  color: #FFFFFF;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+
+.daily-menu-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Preguntas Frecuentes (FAQ)
+   ========================================================================== */
+.faq-grid {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.faq-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.2s ease;
+}
+
+.faq-item[open] {
+  border-color: var(--olive-primary);
+  box-shadow: var(--shadow-hover);
+}
+
+.faq-question {
+  padding: 1.25rem 1.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--olive-primary);
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.7;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* ==========================================================================
    Footer y Elementos Flotantes
    ========================================================================== */
 .site-footer {
@@ -924,8 +1178,14 @@ a {
 @media (max-width: 960px) {
   .hero-grid,
   .contact-schedule-grid,
-  .location-wrapper {
+  .location-wrapper,
+  .menu-grid {
     grid-template-columns: 1fr;
+  }
+
+  .daily-menu-banner {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .reviews-grid {
