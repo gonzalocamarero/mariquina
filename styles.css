@@ -1339,3 +1339,26 @@ a {
     padding: 0.9rem;
   }
 }
+
+/* Optimización para impresión en papel (carta o menú) */
+@media print {
+  .site-header,
+  .floating-whatsapp,
+  .toast,
+  .menu-filters,
+  .location-buttons,
+  .header-actions,
+  .status-pill {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+  .menu-category-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+  }
+}
+
