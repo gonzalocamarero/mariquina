@@ -612,12 +612,47 @@ function initMobileMenu() {
   });
 }
 
+/**
+ * Seguimiento de conversiones y clics en Google Analytics (GA4)
+ * Diseñado con eventos pasivos para garantizar que jamás interfiera
+ * en el funcionamiento natural ni en la apertura de los enlaces.
+ */
+function initAnalyticsTracking() {
+  document.addEventListener(
+    "click",
+    (e) => {
+      const target = e.target.closest("[data-ga-event]");
+      if (!target) return;
+
+      const eventName = target.getAttribute("data-ga-event");
+      const eventLocation = target.getAttribute("data-ga-location") || "general";
+      const buttonText = (target.textContent || "").trim().replace(/\s+/g, " ").substring(0, 50);
+      const destinationUrl = target.getAttribute("href") || "";
+
+      if (typeof window.gtag === "function") {
+        try {
+          window.gtag("event", eventName, {
+            ubicacion: eventLocation,
+            texto_boton: buttonText,
+            destino: destinationUrl,
+            transport_type: "beacon"
+          });
+        } catch {
+          // Seguro: no bloquea la navegación bajo ninguna circunstancia
+        }
+      }
+    },
+    { passive: true }
+  );
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initLanguageSwitcher();
   applyLanguage(currentLang);
   initMenuFilters();
   initCopyButtons();
   initMobileMenu();
+  initAnalyticsTracking();
 
   const yearEl = document.getElementById("currentYear");
   if (yearEl) {
