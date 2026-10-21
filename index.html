@@ -4,19 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MariquinA | Restaurante de Comida Tradicional en Badajoz</title>
-  <meta name="description" content="Restaurante MariquinA en Badajoz (Avenida de Elvas 6, Local 22). Cocina tradicional con producto de primera calidad. Contacta por teléfono o WhatsApp." />
-  <meta name="keywords" content="MariquinA, restaurante Badajoz, comida tradicional Badajoz, Avenida de Elvas, restaurante tradicional Extremadura" />
+  <meta name="description" content="Restaurante MariquinA en Badajoz (Avda. de Elvas 6). Ibéricos Maldonado, carnes a la plancha, pescados frescos, arroces por encargo, menú diario y terraza." />
+  <meta name="keywords" content="MariquinA, restaurante Badajoz, comida tradicional Badajoz, Avenida de Elvas, ibéricos Maldonado Badajoz, arroces Badajoz, restaurante tradicional Extremadura" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.mariquinarestauracion.es/" />
 
   <!-- Open Graph / Compartir en Redes y WhatsApp -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MariquinA Restauración" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:locale:alternate" content="en_GB" />
   <meta property="og:title" content="MariquinA | Restaurante de Comida Tradicional en Badajoz" />
-  <meta property="og:description" content="Sabores de siempre, producto cuidado y ambiente acogedor en Avenida de Elvas 6, Badajoz. Consulta nuestro horario, ubicación y contacta por WhatsApp." />
+  <meta property="og:description" content="Restaurante de cocina tradicional en Badajoz (Avda. de Elvas 6, Local 22). Disfruta de ibéricos de bellota Maldonado, carnes a la plancha, pescados frescos, arroces por encargo y amplia terraza." />
   <meta property="og:url" content="https://www.mariquinarestauracion.es/" />
   <meta property="og:image" content="https://www.mariquinarestauracion.es/assets/hero.jpg" />
+  <meta property="og:image:secure_url" content="https://www.mariquinarestauracion.es/assets/hero.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Restaurante MariquinA en Avenida de Elvas 6, Badajoz - Terraza y fachada exterior" />
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MariquinA | Restaurante de Comida Tradicional en Badajoz" />
+  <meta name="twitter:description" content="Cocina tradicional en Badajoz: ibéricos de bellota Maldonado, carnes a la plancha, pescados frescos, arroces por encargo y terraza en Avda. de Elvas 6, Local 22." />
+  <meta name="twitter:image" content="https://www.mariquinarestauracion.es/assets/hero.jpg" />
+  <meta name="twitter:image:alt" content="Restaurante MariquinA en Badajoz" />
 
   <!-- Favicon e Iconos para todos los navegadores, móviles y Google -->
   <link rel="icon" href="favicon.ico" sizes="32x32" />
@@ -67,6 +80,7 @@
       "Arroces"
     ],
     "priceRange": "€€",
+    "acceptsReservations": "True",
     "hasMap": "https://www.google.com/maps/search/?api=1&query=MariquinA+Avenida+De+Elvas+6+Local+22+06006+Badajoz+Espa%C3%B1a",
     "hasMenu": "https://www.mariquinarestauracion.es/#carta",
     "paymentAccepted": ["Cash", "Credit Card"],
@@ -181,6 +195,39 @@
           "@type": "Answer",
           "text": "Estamos en la Avenida De Elvas 6, Local 22 (06006 Badajoz), a pocos minutos del Hospital Universitario de Badajoz y del Campus Universitario de la UEx."
         }
+      }
+    ]
+  }
+  </script>
+  <!-- Datos estructurados SiteNavigationElement para Google Sitelinks -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Carta y Especialidades",
+        "url": "https://www.mariquinarestauracion.es/#carta"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Menú del Día",
+        "url": "https://www.mariquinarestauracion.es/#menu-diario"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Contacto y Horario",
+        "url": "https://www.mariquinarestauracion.es/#contacto-horario"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Ubicación en Badajoz",
+        "url": "https://www.mariquinarestauracion.es/#ubicacion"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Preguntas Frecuentes",
+        "url": "https://www.mariquinarestauracion.es/#faq"
       }
     ]
   }
@@ -519,7 +566,7 @@
         </div>
 
         <!-- Banner Menú Diario -->
-        <div class="daily-menu-banner">
+        <div class="daily-menu-banner" id="menu-diario">
           <div class="daily-menu-content">
             <span class="daily-menu-tag" data-i18n="menu_daily_tag">Martes a Viernes (Mediodía)</span>
             <h3 data-i18n="menu_daily_title">Menú Diario Casero</h3>
@@ -600,6 +647,29 @@
                   </button>
                 </div>
               </div>
+            </div>
+
+            <!-- Tarjeta Ficha Digital vCard -->
+            <div class="vcard-card">
+              <div class="vcard-body">
+                <div class="vcard-icon olive-bg">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="vcard-title" data-i18n="vcard_title">Ficha de Contacto Digital (vCard)</h4>
+                  <p class="vcard-note" data-i18n="vcard_desc">Guarda nuestros teléfonos, ubicación y enlaces directamente en tu agenda con un toque.</p>
+                </div>
+              </div>
+              <a
+                href="assets/mariquina.vcf"
+                download="MariquinA-Restaurante.vcf"
+                class="btn btn-outline btn-sm"
+                data-i18n="btn_save_contact"
+              >
+                Guardar en Contactos
+              </a>
             </div>
           </div>
 
@@ -698,6 +768,18 @@
                     <path fill="currentColor" d="M21.71 11.29l-9-9a.996.996 0 00-1.41 0l-9 9a.996.996 0 000 1.41l9 9c.39.39 1.02.39 1.41 0l9-9a.996.996 0 000-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/>
                   </svg>
                   <span data-i18n="loc_directions_btn">Cómo llegar en Google Maps</span>
+                </a>
+
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=38.8846,-7.0014"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
+                  </svg>
+                  <span data-i18n="loc_gps_btn">Iniciar navegación GPS</span>
                 </a>
 
                 <button

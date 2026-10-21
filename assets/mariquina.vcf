@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//MariquinA Restauración//ES
+FN:MariquinA Restauración
+N:;MariquinA Restauración;;;
+ORG:MariquinA Restauración
+TITLE:Restaurante de Comida Tradicional
+TEL;TYPE=WORK,VOICE:+34924276084
+TEL;TYPE=CELL,VOICE,MSG:+34667607306
+EMAIL;TYPE=INTERNET,WORK:mariquinarestauracion@gmail.com
+URL:https://www.mariquinarestauracion.es
+ADR;TYPE=WORK,POSTAL,PARCEL:;;Avenida De Elvas 6, Local 22;Badajoz;Badajoz;06006;España
+GEO:38.8846;-7.0014
+NOTE:Restaurante de cocina tradicional en Badajoz (Avenida de Elvas 6, Local 22). Especialistas en ibéricos de bellota Maldonado, carnes a la plancha, pescados frescos, arroces por encargo y menú diario de martes a viernes. Terraza exterior y fácil aparcamiento.
+CATEGORIES:Restaurante,Gastronomía,Comida Tradicional
+END:VCARD

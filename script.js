@@ -116,6 +116,9 @@ const TRANSLATIONS = {
     phone_note: "Atención telefónica durante nuestro horario de apertura.",
     phone_btn: "Llamar ahora",
     copy_phone_btn: "Copiar teléfono",
+    vcard_title: "Ficha de Contacto Digital (vCard)",
+    vcard_desc: "Guarda nuestros teléfonos, ubicación y enlaces directamente en tu agenda con un toque.",
+    btn_save_contact: "Guardar en Contactos",
     schedule_label: "Horario Semanal",
     schedule_title: "Nuestras Horas de Apertura",
     day_tue: "Martes",
@@ -139,6 +142,7 @@ const TRANSLATIONS = {
     loc_landmark: "(Junto a la Universidad y Hospital Universitario)",
     loc_country: "España",
     loc_directions_btn: "Cómo llegar en Google Maps",
+    loc_gps_btn: "Iniciar navegación GPS",
     loc_copy_btn: "Copiar dirección",
 
     // FAQ
@@ -278,6 +282,9 @@ const TRANSLATIONS = {
     phone_note: "Phone assistance available during our opening hours.",
     phone_btn: "Call now",
     copy_phone_btn: "Copy phone",
+    vcard_title: "Digital Contact Card (vCard)",
+    vcard_desc: "Save our phone numbers, address, and links directly to your mobile phonebook.",
+    btn_save_contact: "Save to Contacts",
     schedule_label: "Weekly Schedule",
     schedule_title: "Our Opening Hours",
     day_tue: "Tuesday",
@@ -301,6 +308,7 @@ const TRANSLATIONS = {
     loc_landmark: "(Next to the University and University Hospital)",
     loc_country: "Spain",
     loc_directions_btn: "Get directions on Google Maps",
+    loc_gps_btn: "Start GPS Navigation",
     loc_copy_btn: "Copy address",
 
     // FAQ
