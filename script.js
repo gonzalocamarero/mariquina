@@ -144,6 +144,9 @@ const TRANSLATIONS = {
     loc_directions_btn: "Cómo llegar en Google Maps",
     loc_gps_btn: "Iniciar navegación GPS",
     loc_copy_btn: "Copiar dirección",
+    loc_review_invite_title: "¿Has comido con nosotros?",
+    loc_review_invite_desc: "Tu valoración en Google nos ayuda muchísimo a seguir mejorando y a que más clientes nos conozcan.",
+    loc_review_btn: "Dejar reseña en Google",
 
     // FAQ
     faq_eyebrow: "Resolvemos tus dudas",
@@ -167,6 +170,7 @@ const TRANSLATIONS = {
     rev_title_prefix: "Lo que dicen de",
     rev_caption: "Reseñas en Google Maps",
     rev_google_btn: "Ver en Google",
+    rev_leave_btn: "Escribir reseña",
     footer_tagline: "Restaurante de comida tradicional en Badajoz.",
     footer_addr_label: "Dirección:",
     footer_phone_label: "Teléfono:",
@@ -310,6 +314,9 @@ const TRANSLATIONS = {
     loc_directions_btn: "Get directions on Google Maps",
     loc_gps_btn: "Start GPS Navigation",
     loc_copy_btn: "Copy address",
+    loc_review_invite_title: "Dined with us recently?",
+    loc_review_invite_desc: "Your Google review helps us continue improving and lets other guests discover MariquinA.",
+    loc_review_btn: "Leave a Google Review",
 
     // FAQ
     faq_eyebrow: "Helpful Information",
@@ -333,6 +340,7 @@ const TRANSLATIONS = {
     rev_title_prefix: "What guests say about",
     rev_caption: "Google Maps Reviews",
     rev_google_btn: "View on Google",
+    rev_leave_btn: "Write a review",
     footer_tagline: "Traditional cuisine restaurant in Badajoz, Spain.",
     footer_addr_label: "Address:",
     footer_phone_label: "Phone:",
