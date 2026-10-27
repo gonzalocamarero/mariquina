@@ -858,6 +858,13 @@ a {
   color: var(--text-muted);
 }
 
+.google-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

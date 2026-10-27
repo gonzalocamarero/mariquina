@@ -82,6 +82,12 @@
     "priceRange": "€€",
     "acceptsReservations": "True",
     "hasMap": "https://maps.google.com/?cid=2226193743323190581",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "ratingCount": "5"
+    },
     "hasMenu": "https://www.mariquinarestauracion.es/#carta",
     "paymentAccepted": ["Cash", "Credit Card"],
     "currenciesAccepted": "EUR",
@@ -228,6 +234,11 @@
         "@type": "SiteNavigationElement",
         "name": "Preguntas Frecuentes",
         "url": "https://www.mariquinarestauracion.es/#faq"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Reseñas",
+        "url": "https://www.mariquinarestauracion.es/#resenas"
       }
     ]
   }
@@ -248,7 +259,7 @@
         <a href="#contacto-horario" class="nav-link" data-i18n="nav_contact">Contacto y Horario</a>
         <a href="#ubicacion" class="nav-link" data-i18n="nav_location">Ubicación</a>
         <a href="#faq" class="nav-link" data-i18n="nav_faq">Preguntas Frecuentes</a>
-        <!-- Reseñas ocultas temporalmente hasta activar nuevo Google Place -->
+        <a href="#resenas" class="nav-link" data-i18n="nav_reviews">Reseñas</a>
       </nav>
 
       <div class="header-actions">
@@ -917,8 +928,7 @@
       </div>
     </section>
 
-    <!-- Sección de Reseñas de Google (Oculta temporalmente hasta activar nuevo Google Place) -->
-    <!--
+    <!-- Sección de Reseñas de Google -->
     <section class="section section-alt" id="resenas">
       <div class="container">
         <div class="reviews-top-bar">
@@ -940,38 +950,43 @@
             </div>
             <div class="google-score-info">
               <div class="score-row">
-                <strong class="score-number">4.8</strong>
-                <div class="stars" aria-label="4.8 / 5">
+                <strong class="score-number">5.0</strong>
+                <div class="stars" aria-label="5.0 / 5">
                   ★★★★★
                 </div>
               </div>
               <span class="score-caption" data-i18n="rev_caption">Reseñas en Google Maps</span>
             </div>
-            <a
-              href="https://maps.google.com/?cid=2226193743323190581"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-outline btn-sm"
-              data-i18n="rev_google_btn"
-            >
-              Ver en Google
-            </a>
-            <a
-              href="https://g.page/r/CTXV-SdqB-UeEBM/review"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-primary btn-sm"
-              data-i18n="rev_leave_btn"
-            >
-              Escribir reseña
-            </a>
+            <div class="google-card-actions">
+              <a
+                href="https://maps.google.com/?cid=2226193743323190581"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline btn-sm"
+                data-ga-event="click_google_maps"
+                data-ga-location="resenas_ver"
+                data-i18n="rev_google_btn"
+              >
+                Ver en Google
+              </a>
+              <a
+                href="https://g.page/r/CTXV-SdqB-UeEBM/review"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm"
+                data-ga-event="click_dejar_resena"
+                data-ga-location="resenas_escribir"
+                data-i18n="rev_leave_btn"
+              >
+                Escribir reseña
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="reviews-grid" id="reviewsContainer"></div>
       </div>
     </section>
-    -->
   </main>
 
   <!-- Pie de página -->
