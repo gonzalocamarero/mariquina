@@ -12,6 +12,7 @@ let currentLang = localStorage.getItem("mariquina_lang") || "es";
 
 const TRANSLATIONS = {
   es: {
+    skip_to_content: "Saltar al contenido principal",
     brand_sub: "Restauración",
     nav_menu: "Carta",
     nav_contact: "Contacto y Horario",
@@ -182,6 +183,7 @@ const TRANSLATIONS = {
     status_closed_mon: "Hoy lunes cerrado · Abrimos martes de 11:30 a 0:00"
   },
   en: {
+    skip_to_content: "Skip to main content",
     brand_sub: "Restaurant",
     nav_menu: "Menu",
     nav_contact: "Contact & Hours",

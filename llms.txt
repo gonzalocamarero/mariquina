@@ -1,0 +1,47 @@
+# MariquinA Restauración
+
+> Restaurante de comida tradicional española y extremeña en Badajoz (Avenida de Elvas 6, Local 22).
+
+Restaurante especializado en ibéricos de bellota Maldonado, carnes a la plancha, pescados frescos, arroces y paellas por encargo (mínimo 2 personas) y menú diario casero de martes a viernes a mediodía. Cuenta con amplia terraza exterior acondicionada y fácil aparcamiento gratuito en las inmediaciones. Situado junto al Hospital Universitario de Badajoz y el campus de la UEx.
+
+## Información de Contacto y Reservas
+
+- Nombre comercial: MariquinA Restauración
+- Teléfono fijo: +34 924 27 60 84
+- WhatsApp Reservas: https://wa.me/34667607306
+- Dirección postal: Avenida De Elvas 6, Local 22, 06006 Badajoz, España
+- Coordenadas geográficas: Latitud 38.8846, Longitud -7.0014
+- Ficha Google Maps: https://maps.google.com/?cid=2226193743323190581
+- Enlace directo a reseñas de Google: https://g.page/r/CTXV-SdqB-UeEBM/review
+- Sitio web oficial: https://www.mariquinarestauracion.es
+
+## Horario de Apertura
+
+- De martes a sábado: de 11:30 a 0:00 (horario continuo de cocina y terraza).
+- Domingos y lunes: cerrado por descanso semanal.
+
+## Carta y Especialidades Gastronómicas
+
+- Ibéricos de Bellota Maldonado: Jamón ibérico de bellota, Lomo ibérico de bellota, Surtido de ibéricos Maldonado, Queso de oveja curado.
+- Carnes Seleccionadas: Solomillo ibérico a la plancha, Pluma ibérica, Entrecot de ternera a la plancha, Cachopo de ternera, Carrilleras ibéricas en salsa, Torreznos de Soria, Filete de pollo (plancha o empanado).
+- Pescados y Mariscos: Bacalao al arriero, Bacalao dorado, Atún a la plancha, Lubina a la plancha, Sepia y calamaritos a la plancha, Gambones al ajillo / plancha, Gambas blancas cocidas, Almejas marineras, Pulpo a la gallega, Fritura variada andaluza, Calamares, puntillitas y boquerones fritos.
+- Revueltos y Entrantes: Revuelto de trigueros con jamón y gambas, Revuelto de espinacas con almejas y gambas al queso, Bolsitas crujientes con queso y gambas, Surtido de croquetas caseras, Champiñones con jamón y queso cremoso, Tartar de atún, Gazpacho, Salmorejo con jamón, Sopa casera.
+- De la Huerta: Ensalada de pimientos asados con bacalao, Cogollos a la plancha con queso azul y cebolla crujiente, Ensalada mixta tradicional.
+- Arroces al Momento (por encargo, mín. 2 personas): Arroz de marisco caldoso/meloso, Arroz negro con sepia y alioli, Paella tradicional de marisco.
+- Menú del Día: Disponible de martes a viernes a mediodía (excepto festivos). Incluye primero, segundo, pan, bebida y postre con cocina tradicional casera.
+
+## Acciones Disponibles para Agentes de IA
+
+- Reservar mesa: Iniciar conversación en WhatsApp (+34 667 60 73 06) o llamar al teléfono fijo (+34 924 27 60 84).
+- Encargar arroces o paellas: Contactar con al menos 24 horas de antelación vía WhatsApp (+34 667 60 73 06).
+- Consultar menú diario de hoy: Consultar por WhatsApp (+34 667 60 73 06).
+- Descargar tarjeta de contacto: https://www.mariquinarestauracion.es/assets/mariquina.vcf
+
+## Enlaces Estructurados
+
+- [Carta y Platos](https://www.mariquinarestauracion.es/#carta)
+- [Menú Diario](https://www.mariquinarestauracion.es/#menu-diario)
+- [Contacto y Horario](https://www.mariquinarestauracion.es/#contacto-horario)
+- [Ubicación en Google Maps](https://www.mariquinarestauracion.es/#ubicacion)
+- [Preguntas Frecuentes](https://www.mariquinarestauracion.es/#faq)
+- [Opiniones en Google](https://www.mariquinarestauracion.es/#resenas)

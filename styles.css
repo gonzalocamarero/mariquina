@@ -38,6 +38,28 @@
   padding: 0;
 }
 
+/* Enlace accesible de salto al contenido principal (Skip-link / Agentes de accesibilidad) */
+.skip-link {
+  position: absolute;
+  top: -120px;
+  left: 1rem;
+  background-color: var(--olive-primary);
+  color: #FFFFFF;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.95rem;
+  z-index: 10000;
+  box-shadow: var(--shadow-hover);
+  transition: top 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid var(--earth-accent);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 84px;

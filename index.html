@@ -39,6 +39,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
+  <link rel="alternate" type="text/markdown" href="llms.txt" title="MariquinA Agentic / LLM Summary" />
   <meta name="theme-color" content="#4A5D23" />
 
   <!-- Tipografías: Cormorant Garamond (Serif elegante) + Plus Jakarta Sans (Limpia y legible) -->
@@ -144,7 +145,23 @@
         "opens": "11:30",
         "closes": "23:59"
       }
-    ]
+    ],
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20reservar%20una%20mesa",
+        "inLanguage": ["es", "en"],
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "FoodEstablishmentReservation",
+        "name": "Reserva de mesa en MariquinA Restauración"
+      }
+    }
   }
   </script>
 
@@ -245,6 +262,7 @@
   </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link" data-i18n="skip_to_content">Saltar al contenido principal</a>
 
   <!-- Barra de navegación -->
   <header class="site-header" id="inicio">
@@ -292,7 +310,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- Hero / Presentación -->
     <section class="hero">
       <div class="container hero-grid">
