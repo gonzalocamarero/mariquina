@@ -356,15 +356,18 @@
 
         <div class="hero-visual">
           <div class="image-frame">
-            <img
-              src="assets/hero.jpg"
-              alt="Terraza y fachada del Restaurante MariquinA en Badajoz"
-              class="hero-img"
-              width="800"
-              height="600"
-              fetchpriority="high"
-              decoding="async"
-            />
+            <picture>
+              <source srcset="assets/hero.webp" type="image/webp" />
+              <img
+                src="assets/hero.jpg"
+                alt="Terraza y fachada del Restaurante MariquinA en Badajoz"
+                class="hero-img"
+                width="958"
+                height="539"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
             <div class="floating-card">
               <span class="floating-tag">Badajoz · Extremadura</span>
               <strong data-i18n="hero_floating_title">Cocina de Raíz y Tradición</strong>
@@ -386,7 +389,7 @@
         </div>
 
         <!-- Filtros interactivos -->
-        <div class="menu-filters" role="tablist" aria-label="Categorías de la carta">
+        <div class="menu-filters" role="group" aria-label="Categorías de la carta">
           <button type="button" class="menu-filter-btn active" data-filter="all" data-i18n="filter_all">Todos los Platos</button>
           <button type="button" class="menu-filter-btn" data-filter="ibericos" data-i18n="filter_ibericos">Ibéricos Maldonado</button>
           <button type="button" class="menu-filter-btn" data-filter="carnes" data-i18n="filter_carnes">Carnes</button>

@@ -10,13 +10,13 @@
   --olive-primary: #4A5D23;
   --olive-dark: #2E3B15;
   --olive-soft: #E9EFE0;
-  --earth-accent: #B86B43;
+  --earth-accent: #96502B;
   --earth-soft: #F7EBE4;
-  --whatsapp-green: #208C4C;
-  --whatsapp-hover: #186E3B;
+  --whatsapp-green: #1B7B43;
+  --whatsapp-hover: #156235;
   --text-primary: #1E241B;
   --text-secondary: #545D4E;
-  --text-muted: #788072;
+  --text-muted: #5F6759;
   --border-light: #E4E0D6;
   --star-gold: #F4B400;
 
@@ -374,6 +374,11 @@ a {
   overflow: hidden;
   box-shadow: var(--shadow-hover);
   border: 6px solid #FFFFFF;
+}
+
+.image-frame picture {
+  display: block;
+  width: 100%;
 }
 
 .hero-img {
