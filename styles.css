@@ -146,7 +146,7 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: clamp(0.75rem, 1.4vw, 1.5rem);
 }
 
 .nav-link {
@@ -1153,6 +1153,250 @@ a {
 }
 
 /* ==========================================================================
+   Menús para Grupos y Comidas de Empresa
+   ========================================================================== */
+.group-menus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+  align-items: stretch;
+}
+
+.group-menu-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.group-menu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.group-menu-card-featured {
+  border: 2px solid var(--olive-primary);
+  box-shadow: 0 10px 24px rgba(79, 93, 47, 0.12);
+}
+
+.group-menu-card-header {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 1.5rem;
+}
+
+.group-menu-badge-wrapper {
+  margin-bottom: 0.75rem;
+}
+
+.group-menu-name {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.group-menu-price-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.group-menu-price-number {
+  font-family: var(--font-serif);
+  font-size: 2.65rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.group-menu-price-detail {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.group-menu-conditions-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background-color: var(--bg-alt);
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+}
+
+.group-menu-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  flex-grow: 1;
+}
+
+.group-menu-course-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.group-menu-course-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--earth-accent);
+}
+
+.course-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.group-menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.group-menu-items li {
+  font-size: 0.98rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+  padding-left: 1.15rem;
+  position: relative;
+}
+
+.group-menu-items li::before {
+  content: "•";
+  position: absolute;
+  left: 0.25rem;
+  color: var(--olive-primary);
+  font-weight: bold;
+}
+
+.group-menu-items li.dish-or-divider {
+  padding-left: 0;
+  text-align: center;
+  font-size: 0.82rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0.15rem 0;
+}
+
+.group-menu-items li.dish-or-divider::before {
+  content: none;
+}
+
+.group-menu-drinks-box {
+  background-color: #FAF7F2;
+  border: 1px dashed #D6CBC0;
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.15rem;
+  margin-top: 0.5rem;
+}
+
+.group-menu-drinks-header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.35rem;
+  color: var(--olive-dark);
+  font-size: 0.88rem;
+}
+
+.drink-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.group-menu-drinks-box p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.group-menu-card-footer {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.group-menu-booking-note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+}
+
+.btn-block {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Banner de personalización y consultas de grupos */
+.group-custom-banner {
+  margin-top: 2.25rem;
+  background: linear-gradient(135deg, #FAF7F2 0%, #F1E9DE 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 2rem 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.group-custom-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--text-primary);
+  margin-bottom: 0.45rem;
+}
+
+.group-custom-content p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 680px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.group-custom-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
    Preguntas Frecuentes (FAQ)
    ========================================================================== */
 .faq-grid {
@@ -1340,6 +1584,45 @@ a {
   .hero-img {
     height: 360px;
   }
+
+  .group-menus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .group-custom-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 860px) {
+  .header-actions .btn-whatsapp {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: inline-flex;
+    width: 38px;
+    height: 38px;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-main);
+    border-bottom: 1px solid var(--border-light);
+    flex-direction: column;
+    padding: 1.25rem;
+    gap: 1rem;
+    display: none;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1366,32 +1649,8 @@ a {
     gap: 0.45rem;
   }
 
-  .header-actions .btn-whatsapp {
-    display: none;
-  }
-
-  .mobile-menu-btn {
-    display: inline-flex;
-    width: 38px;
-    height: 38px;
-  }
-
   .main-nav {
-    position: absolute;
     top: 66px;
-    left: 0;
-    right: 0;
-    background-color: var(--bg-main);
-    border-bottom: 1px solid var(--border-light);
-    flex-direction: column;
-    padding: 1.25rem;
-    gap: 1rem;
-    display: none;
-    box-shadow: var(--shadow-soft);
-  }
-
-  .main-nav.is-open {
-    display: flex;
   }
 
   .hero {

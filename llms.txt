@@ -30,9 +30,27 @@ Restaurante especializado en ibéricos de bellota Maldonado, carnes a la plancha
 - Arroces al Momento (por encargo, mín. 2 personas): Arroz de marisco caldoso/meloso, Arroz negro con sepia y alioli, Paella tradicional de marisco.
 - Menú del Día: Disponible de martes a viernes a mediodía (excepto festivos). Incluye primero, segundo, pan, bebida y postre con cocina tradicional casera.
 
+## Menús para Grupos y Comidas de Empresa
+
+Especialmente creados para comidas y cenas de empresa, reuniones familiares y celebraciones de grupo en Badajoz (Avenida de Elvas 6).
+
+- **Menú Empresa 45€ (por comensal, IVA incluido · café no incluido):**
+  - Entrantes al centro (a compartir): Langostinos cocidos, Tartar de atún, Bolsitas rellenas crujientes.
+  - Plato principal (a elegir): Pluma ibérica a la plancha ó Bacalao al arriero.
+  - Postre: Surtido de postres caseros de la casa al centro.
+  - Bebidas incluidas: Agua mineral, vino blanco (Verdejo), vino tinto (Viña Puebla), refrescos, cerveza y copa de cava.
+  - Condiciones: Grupos a convenir (se pueden adaptar platos para alergias/intolerancias con aviso previo), reserva previa requerida por WhatsApp o teléfono.
+
+- **Menú Empresa 50€ (por comensal, IVA incluido · café no incluido · Selección Bellota Maldonado):**
+  - Entrantes al centro (a compartir): Surtido de ibéricos de bellota Maldonado, Langostinos cocidos, Bacalao dorado.
+  - Plato principal (a elegir): Solomillo ibérico a la plancha ó Merluza de pincho a la sevillana.
+  - Postre: Surtido de postres caseros de la casa al centro.
+  - Bebidas incluidas: Agua mineral, vino blanco (Verdejo), vino tinto (Viña Puebla), refrescos, cerveza y copa de cava.
+  - Condiciones: Grupos a convenir (se pueden adaptar platos para alergias/intolerancias con aviso previo), reserva previa requerida por WhatsApp o teléfono.
+
 ## Acciones Disponibles para Agentes de IA
 
-- Reservar mesa: Iniciar conversación en WhatsApp (+34 667 60 73 06) o llamar al teléfono fijo (+34 924 27 60 84).
+- Reservar mesa o menú de empresa: Iniciar conversación en WhatsApp (+34 667 60 73 06) o llamar al teléfono fijo (+34 924 27 60 84).
 - Encargar arroces o paellas: Contactar con al menos 24 horas de antelación vía WhatsApp (+34 667 60 73 06).
 - Consultar menú diario de hoy: Consultar por WhatsApp (+34 667 60 73 06).
 - Descargar tarjeta de contacto: https://www.mariquinarestauracion.es/assets/mariquina.vcf
@@ -40,6 +58,7 @@ Restaurante especializado en ibéricos de bellota Maldonado, carnes a la plancha
 ## Enlaces Estructurados
 
 - [Carta y Platos](https://www.mariquinarestauracion.es/#carta)
+- [Menús para Grupos y Empresas](https://www.mariquinarestauracion.es/#menus-grupos)
 - [Menú Diario](https://www.mariquinarestauracion.es/#menu-diario)
 - [Contacto y Horario](https://www.mariquinarestauracion.es/#contacto-horario)
 - [Ubicación en Google Maps](https://www.mariquinarestauracion.es/#ubicacion)

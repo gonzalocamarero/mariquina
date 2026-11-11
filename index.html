@@ -218,6 +218,14 @@
           "@type": "Answer",
           "text": "Estamos en la Avenida De Elvas 6, Local 22 (06006 Badajoz), a pocos minutos del Hospital Universitario de Badajoz y del Campus Universitario de la UEx."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dispone Restaurante MariquinA de menús especiales para comidas de empresa o grupos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, disponemos de dos menús especiales para comidas de empresa, reuniones familiares y celebraciones en Badajoz: el Menú 45€ y el Menú 50€ (con ibéricos de bellota Maldonado). Ambos precios son por comensal con IVA incluido. Incluyen entrantes variados al centro, plato principal a elegir entre carnes ibéricas y pescados, surtido de postres caseros y bodega con bebidas incluidas (vino blanco Verdejo, tinto Viña Puebla, cerveza, refrescos, agua y copa de cava). El café no está incluido y el tamaño del grupo es a convenir con reserva previa."
+        }
       }
     ]
   }
@@ -231,6 +239,11 @@
         "@type": "SiteNavigationElement",
         "name": "Carta y Especialidades",
         "url": "https://www.mariquinarestauracion.es/#carta"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Menús para Grupos y Empresas",
+        "url": "https://www.mariquinarestauracion.es/#menus-grupos"
       },
       {
         "@type": "SiteNavigationElement",
@@ -274,6 +287,7 @@
 
       <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
         <a href="#carta" class="nav-link" data-i18n="nav_menu">Carta</a>
+        <a href="#menus-grupos" class="nav-link" data-i18n="nav_group_menus">Menús Grupos</a>
         <a href="#contacto-horario" class="nav-link" data-i18n="nav_contact">Contacto y Horario</a>
         <a href="#ubicacion" class="nav-link" data-i18n="nav_location">Ubicación</a>
         <a href="#faq" class="nav-link" data-i18n="nav_faq">Preguntas Frecuentes</a>
@@ -620,8 +634,208 @@
       </div>
     </section>
 
+    <!-- Sección de Menús para Grupos y Empresas -->
+    <section class="section section-alt" id="menus-grupos">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="group_menus_eyebrow">Celebraciones y Empresas</span>
+          <h2 class="section-title" data-i18n="group_menus_title">Menús para Grupos y Comidas de Empresa</h2>
+          <p class="section-subtitle" data-i18n="group_menus_subtitle">
+            Propuestas gastronómicas pensadas para compartir en celebraciones, comidas de empresa y reuniones familiares en Badajoz. Con entrantes al centro, principal a elegir, postres caseros y bodega con bebidas incluida.
+          </p>
+        </div>
+
+        <!-- Grid de Tarjetas de Menú -->
+        <div class="group-menus-grid">
+          <!-- Menú 1: 45 € -->
+          <article class="group-menu-card">
+            <div class="group-menu-card-header">
+              <div class="group-menu-badge-wrapper">
+                <span class="menu-badge menu-badge-olive" data-i18n="group_m1_badge">Selección Tradición</span>
+              </div>
+              <h3 class="group-menu-name" data-i18n="group_m1_name">Menú Empresa 45€</h3>
+              <div class="group-menu-price-box">
+                <span class="group-menu-price-number" data-i18n="group_price_45">45€</span>
+                <span class="group-menu-price-detail" data-i18n="group_price_detail">/ comensal (IVA incluido)</span>
+              </div>
+              <span class="group-menu-conditions-tag" data-i18n="group_coffee_not_included">Café no incluido</span>
+            </div>
+
+            <div class="group-menu-courses">
+              <!-- Entrantes -->
+              <div class="group-menu-course-block">
+                <h4 class="group-menu-course-title">
+                  <svg class="course-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                  <span data-i18n="group_starters_title">Entrantes al centro (a compartir)</span>
+                </h4>
+                <ul class="group-menu-items">
+                  <li data-i18n="group_m1_dish1">Langostinos cocidos</li>
+                  <li data-i18n="group_m1_dish2">Tartar de atún</li>
+                  <li data-i18n="group_m1_dish3">Bolsitas rellenas crujientes</li>
+                </ul>
+              </div>
+
+              <!-- Principal -->
+              <div class="group-menu-course-block">
+                <h4 class="group-menu-course-title">
+                  <svg class="course-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.48L23 5.05h-5V1h-1.97v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1zm15.03-7c0-8-15.03-4-15.03-4v9h15.03v-5z"/></svg>
+                  <span data-i18n="group_main_title">Plato principal (a elegir)</span>
+                </h4>
+                <ul class="group-menu-items">
+                  <li data-i18n="group_m1_main1">Pluma ibérica a la plancha</li>
+                  <li class="dish-or-divider"><span data-i18n="group_or">ó bien</span></li>
+                  <li data-i18n="group_m1_main2">Bacalao al arriero</li>
+                </ul>
+              </div>
+
+              <!-- Postre -->
+              <div class="group-menu-course-block">
+                <h4 class="group-menu-course-title">
+                  <svg class="course-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12c0 3.58 2.5 6.58 5.9 7.42-.03-.27-.05-.55-.05-.84 0-2.8 1.94-5.15 4.56-5.83C11.55 12.3 11 11.22 11 10c0-1.66 1.34-3 3-3s3 1.34 3 3c0 1.22-.55 2.3-1.41 2.75 2.62.68 4.56 3.03 4.56 5.83 0 .29-.02.57-.05.84C20.5 18.58 23 15.58 23 12c0-5.5-4.5-10-10-10z"/></svg>
+                  <span data-i18n="group_dessert_title">Postre de la casa (al centro)</span>
+                </h4>
+                <ul class="group-menu-items">
+                  <li data-i18n="group_dessert_item">Surtido de postres caseros MariquinA</li>
+                </ul>
+              </div>
+
+              <!-- Bebidas incluidas -->
+              <div class="group-menu-drinks-box">
+                <div class="group-menu-drinks-header">
+                  <svg class="drink-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2v2h1v4.5C8 10.99 9.79 13 12 13s4-2.01 4-4.5V4h1V2H7zm4 10.86C8.89 12.38 7 9.87 7 7V4h10v3c0 2.87-1.89 5.38-4 5.86V20h5v2H6v-2h5v-7.14z"/></svg>
+                  <strong data-i18n="group_drinks_title">Bebidas incluidas durante el servicio:</strong>
+                </div>
+                <p data-i18n="group_drinks_desc">Agua mineral, cerveza, refrescos, vino blanco (Verdejo), vino tinto (Viña Puebla) y copa de cava.</p>
+              </div>
+            </div>
+
+            <div class="group-menu-card-footer">
+              <p class="group-menu-booking-note" data-i18n="group_booking_notice">Grupos a convenir · Reserva previa requerida</p>
+              <a
+                href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20el%20Men%C3%BA%20de%20Grupo%20de%2045%E2%82%AC"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp btn-block"
+                data-ga-event="click_whatsapp"
+                data-ga-location="menu_grupo_45"
+              >
+                <span data-i18n="group_btn_book_45">Reservar Menú 45€ por WhatsApp</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Menú 2: 50 € (Especial Maldonado) -->
+          <article class="group-menu-card group-menu-card-featured">
+            <div class="group-menu-card-header">
+              <div class="group-menu-badge-wrapper">
+                <span class="menu-badge menu-badge-maldonado" data-i18n="group_m2_badge">Selección Bellota Maldonado</span>
+              </div>
+              <h3 class="group-menu-name" data-i18n="group_m2_name">Menú Empresa 50€</h3>
+              <div class="group-menu-price-box">
+                <span class="group-menu-price-number" data-i18n="group_price_50">50€</span>
+                <span class="group-menu-price-detail" data-i18n="group_price_detail">/ comensal (IVA incluido)</span>
+              </div>
+              <span class="group-menu-conditions-tag" data-i18n="group_coffee_not_included">Café no incluido</span>
+            </div>
+
+            <div class="group-menu-courses">
+              <!-- Entrantes -->
+              <div class="group-menu-course-block">
+                <h4 class="group-menu-course-title">
+                  <svg class="course-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                  <span data-i18n="group_starters_title">Entrantes al centro (a compartir)</span>
+                </h4>
+                <ul class="group-menu-items">
+                  <li data-i18n="group_m2_dish1">Surtido de ibéricos de bellota (Maldonado)</li>
+                  <li data-i18n="group_m2_dish2">Langostinos cocidos</li>
+                  <li data-i18n="group_m2_dish3">Bacalao dorado</li>
+                </ul>
+              </div>
+
+              <!-- Principal -->
+              <div class="group-menu-course-block">
+                <h4 class="group-menu-course-title">
+                  <svg class="course-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.48L23 5.05h-5V1h-1.97v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1zm15.03-7c0-8-15.03-4-15.03-4v9h15.03v-5z"/></svg>
+                  <span data-i18n="group_main_title">Plato principal (a elegir)</span>
+                </h4>
+                <ul class="group-menu-items">
+                  <li data-i18n="group_m2_main1">Solomillo ibérico a la plancha</li>
+                  <li class="dish-or-divider"><span data-i18n="group_or">ó bien</span></li>
+                  <li data-i18n="group_m2_main2">Merluza de pincho a la sevillana</li>
+                </ul>
+              </div>
+
+              <!-- Postre -->
+              <div class="group-menu-course-block">
+                <h4 class="group-menu-course-title">
+                  <svg class="course-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12c0 3.58 2.5 6.58 5.9 7.42-.03-.27-.05-.55-.05-.84 0-2.8 1.94-5.15 4.56-5.83C11.55 12.3 11 11.22 11 10c0-1.66 1.34-3 3-3s3 1.34 3 3c0 1.22-.55 2.3-1.41 2.75 2.62.68 4.56 3.03 4.56 5.83 0 .29-.02.57-.05.84C20.5 18.58 23 15.58 23 12c0-5.5-4.5-10-10-10z"/></svg>
+                  <span data-i18n="group_dessert_title">Postre de la casa (al centro)</span>
+                </h4>
+                <ul class="group-menu-items">
+                  <li data-i18n="group_dessert_item">Surtido de postres caseros MariquinA</li>
+                </ul>
+              </div>
+
+              <!-- Bebidas incluidas -->
+              <div class="group-menu-drinks-box">
+                <div class="group-menu-drinks-header">
+                  <svg class="drink-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2v2h1v4.5C8 10.99 9.79 13 12 13s4-2.01 4-4.5V4h1V2H7zm4 10.86C8.89 12.38 7 9.87 7 7V4h10v3c0 2.87-1.89 5.38-4 5.86V20h5v2H6v-2h5v-7.14z"/></svg>
+                  <strong data-i18n="group_drinks_title">Bebidas incluidas durante el servicio:</strong>
+                </div>
+                <p data-i18n="group_drinks_desc">Agua mineral, cerveza, refrescos, vino blanco (Verdejo), vino tinto (Viña Puebla) y copa de cava.</p>
+              </div>
+            </div>
+
+            <div class="group-menu-card-footer">
+              <p class="group-menu-booking-note" data-i18n="group_booking_notice">Grupos a convenir · Reserva previa requerida</p>
+              <a
+                href="https://wa.me/34667607306?text=Hola%20MariquinA,%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20el%20Men%C3%BA%20de%20Grupo%20de%2050%E2%82%AC"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp btn-block"
+                data-ga-event="click_whatsapp"
+                data-ga-location="menu_grupo_50"
+              >
+                <span data-i18n="group_btn_book_50">Reservar Menú 50€ por WhatsApp</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Banner de información de grupos y personalización -->
+        <div class="group-custom-banner">
+          <div class="group-custom-content">
+            <h3 data-i18n="group_custom_title">¿Sois un grupo especial o necesitáis adaptar el menú?</h3>
+            <p data-i18n="group_custom_desc">
+              Nuestros menús están pensados para grupos y empresas con número de comensales a convenir. Además, podemos adaptar platos para comensales con intolerancias, alergias o dietas específicas avisando al formalizar la reserva. ¡Consúltanos sin compromiso!
+            </p>
+          </div>
+          <div class="group-custom-actions">
+            <a
+              href="https://wa.me/34667607306?text=Hola%20MariquinA,%20quiero%20consultar%20opciones%20para%20un%20grupo%20o%20comida%20de%20empresa"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp"
+              data-ga-event="click_whatsapp"
+              data-ga-location="banner_grupos"
+            >
+              <span data-i18n="btn_inquire_groups">Consultar reservas de grupo</span>
+            </a>
+            <a
+              href="tel:+34924276084"
+              class="btn btn-outline"
+              data-ga-event="click_telefono"
+              data-ga-location="banner_grupos"
+            >
+              <span data-i18n="btn_call_groups">Llamar al 924 27 60 84</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Sección de Contacto y Horario -->
-    <section class="section section-alt" id="contacto-horario">
+    <section class="section" id="contacto-horario">
       <div class="container">
         <div class="section-header">
           <span class="eyebrow" data-i18n="contact_eyebrow">Atención Cercana</span>
@@ -776,7 +990,7 @@
     </section>
 
     <!-- Sección de Ubicación -->
-    <section class="section" id="ubicacion">
+    <section class="section section-alt" id="ubicacion">
       <div class="container">
         <div class="section-header">
           <span class="eyebrow" data-i18n="loc_eyebrow">Dónde Estamos</span>
@@ -876,7 +1090,7 @@
     </section>
 
     <!-- Sección de Preguntas Frecuentes -->
-    <section class="section section-alt" id="faq">
+    <section class="section" id="faq">
       <div class="container">
         <div class="section-header">
           <span class="eyebrow" data-i18n="faq_eyebrow">Resolvemos tus dudas</span>
@@ -944,6 +1158,16 @@
             </summary>
             <div class="faq-answer">
               <p data-i18n="faq_a6">Estamos en la Avenida De Elvas 6, Local 22 (06006 Badajoz). Una ubicación privilegiada a pocos minutos del Hospital Universitario de Badajoz y el campus de la Universidad de Extremadura (UEx).</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span data-i18n="faq_q7">¿Disponéis de menús especiales para comidas de empresa o grupos?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq_a7">Sí, disponemos de dos menús especiales para grupos y empresas en Badajoz (45€ y 50€ por comensal, IVA incluido). Incluyen entrantes al centro para compartir (como ibéricos de bellota Maldonado, langostinos o tartar de atún), plato principal a elegir, postres caseros y bodega con bebidas incluidas (vino blanco Verdejo, tinto Viña Puebla, cerveza, refrescos y copa de cava). El café no está incluido y el tamaño del grupo es a convenir con reserva previa.</p>
             </div>
           </details>
         </div>

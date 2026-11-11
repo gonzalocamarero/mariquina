@@ -15,6 +15,7 @@ const TRANSLATIONS = {
     skip_to_content: "Saltar al contenido principal",
     brand_sub: "Restauración",
     nav_menu: "Carta",
+    nav_group_menus: "Menús Grupos",
     nav_contact: "Contacto y Horario",
     nav_location: "Ubicación",
     nav_faq: "Preguntas Frecuentes",
@@ -105,6 +106,46 @@ const TRANSLATIONS = {
       "De martes a viernes a mediodía (excepto festivos) disponemos de nuestro menú del día con variedad de primeros y segundos platos tradicionales, pan, bebida y postre. Cocina de mercado recién hecha.",
     btn_ask_menu: "Consultar menú de hoy",
 
+    // Menús para Grupos y Empresas
+    group_menus_eyebrow: "Celebraciones y Empresas",
+    group_menus_title: "Menús para Grupos y Comidas de Empresa",
+    group_menus_subtitle:
+      "Propuestas gastronómicas pensadas para compartir en celebraciones, comidas de empresa y reuniones familiares en Badajoz. Con entrantes al centro, principal a elegir, postres caseros y bodega con bebidas incluida.",
+    group_m1_badge: "Selección Tradición",
+    group_m1_name: "Menú Empresa 45€",
+    group_m2_badge: "Selección Bellota Maldonado",
+    group_m2_name: "Menú Empresa 50€",
+    group_price_45: "45€",
+    group_price_50: "50€",
+    group_price_detail: "/ comensal (IVA incluido)",
+    group_coffee_not_included: "Café no incluido",
+    group_starters_title: "Entrantes al centro (a compartir)",
+    group_main_title: "Plato principal (a elegir)",
+    group_or: "ó bien",
+    group_dessert_title: "Postre de la casa (al centro)",
+    group_dessert_item: "Surtido de postres caseros MariquinA",
+    group_drinks_title: "Bebidas incluidas durante el servicio:",
+    group_drinks_desc:
+      "Agua mineral, cerveza, refrescos, vino blanco (Verdejo), vino tinto (Viña Puebla) y copa de cava.",
+    group_booking_notice: "Grupos a convenir · Reserva previa requerida",
+    group_btn_book_45: "Reservar Menú 45€ por WhatsApp",
+    group_btn_book_50: "Reservar Menú 50€ por WhatsApp",
+    group_m1_dish1: "Langostinos cocidos",
+    group_m1_dish2: "Tartar de atún",
+    group_m1_dish3: "Bolsitas rellenas crujientes",
+    group_m1_main1: "Pluma ibérica a la plancha",
+    group_m1_main2: "Bacalao al arriero",
+    group_m2_dish1: "Surtido de ibéricos de bellota (Maldonado)",
+    group_m2_dish2: "Langostinos cocidos",
+    group_m2_dish3: "Bacalao dorado",
+    group_m2_main1: "Solomillo ibérico a la plancha",
+    group_m2_main2: "Merluza de pincho a la sevillana",
+    group_custom_title: "¿Sois un grupo especial o necesitáis adaptar el menú?",
+    group_custom_desc:
+      "Nuestros menús están pensados para grupos y empresas con número de comensales a convenir. Además, podemos adaptar platos para comensales con intolerancias, alergias o dietas específicas avisando al formalizar la reserva. ¡Consúltanos sin compromiso!",
+    btn_inquire_groups: "Consultar reservas de grupo",
+    btn_call_groups: "Llamar al 924 27 60 84",
+
     // Contacto y Horario
     contact_eyebrow: "Atención Cercana",
     contact_title: "Contacto y Horario",
@@ -165,6 +206,9 @@ const TRANSLATIONS = {
     faq_a5: "Sí, la zona de la Avenida de Elvas 6 cuenta con amplias avenidas y zonas de aparcamiento público cómodo y gratuito en las inmediaciones del restaurante.",
     faq_q6: "¿Dónde está ubicado exactamente el restaurante?",
     faq_a6: "Estamos en la Avenida De Elvas 6, Local 22 (06006 Badajoz). Una ubicación privilegiada a pocos minutos del Hospital Universitario de Badajoz y el campus de la Universidad de Extremadura (UEx).",
+    faq_q7: "¿Dispone MariquinA de menús especiales para comidas de empresa o grupos?",
+    faq_a7:
+      "Sí, disponemos de dos menús especiales para grupos y empresas en Badajoz (45€ y 50€ por comensal, IVA incluido). Incluyen entrantes al centro para compartir (como ibéricos Maldonado, langostinos cocidos o tartar de atún), plato principal a elegir entre carnes ibéricas y pescados, postres caseros y bodega con bebidas incluidas (vino Verdejo, Viña Puebla, cerveza, refrescos y cava). El café no está incluido y el tamaño del grupo es a convenir con reserva previa.",
 
     // Reseñas & Footer
     rev_eyebrow: "Opiniones de Clientes",
@@ -186,6 +230,7 @@ const TRANSLATIONS = {
     skip_to_content: "Skip to main content",
     brand_sub: "Restaurant",
     nav_menu: "Menu",
+    nav_group_menus: "Group Menus",
     nav_contact: "Contact & Hours",
     nav_location: "Location",
     nav_faq: "FAQ",
@@ -276,6 +321,46 @@ const TRANSLATIONS = {
       "From Tuesday to Friday at lunchtime (excluding public holidays) we offer our daily set menu featuring traditional starters and main courses, bread, drink and dessert. Fresh market cuisine.",
     btn_ask_menu: "Check today's menu on WhatsApp",
 
+    // Group & Corporate Menus
+    group_menus_eyebrow: "Celebrations & Corporate",
+    group_menus_title: "Group & Corporate Menus",
+    group_menus_subtitle:
+      "Specially crafted for company dinners, gatherings and family celebrations in Badajoz. Shared starters, individual choice of main course, homemade desserts and drinks included.",
+    group_m1_badge: "Classic Selection",
+    group_m1_name: "Group Menu 45€",
+    group_m2_badge: "Maldonado Bellota Selection",
+    group_m2_name: "Group Menu 50€",
+    group_price_45: "45€",
+    group_price_50: "50€",
+    group_price_detail: "/ guest (VAT included)",
+    group_coffee_not_included: "Coffee not included",
+    group_starters_title: "Starters to share (center of table)",
+    group_main_title: "Main course (choice of)",
+    group_or: "or",
+    group_dessert_title: "House dessert (center of table)",
+    group_dessert_item: "MariquinA homemade dessert platter",
+    group_drinks_title: "Drinks included during service:",
+    group_drinks_desc:
+      "Mineral water, beer, soft drinks, white wine (Verdejo), red wine (Viña Puebla) and Spanish cava.",
+    group_booking_notice: "Group size on request · Advance booking required",
+    group_btn_book_45: "Book 45€ Menu on WhatsApp",
+    group_btn_book_50: "Book 50€ Menu on WhatsApp",
+    group_m1_dish1: "Boiled white king prawns",
+    group_m1_dish2: "Fresh tuna tartare",
+    group_m1_dish3: "Crispy stuffed wonton purses",
+    group_m1_main1: "Grilled Iberian pork 'Pluma' cut",
+    group_m1_main2: "Traditional cod 'al arriero' (garlic & paprika)",
+    group_m2_dish1: "Maldonado 100% acorn-fed Iberian cured board",
+    group_m2_dish2: "Boiled white king prawns",
+    group_m2_dish3: "Bacalao Dorado (scrambled cod & crispy straw potatoes)",
+    group_m2_main1: "Grilled Iberian pork tenderloin",
+    group_m2_main2: "Sevilla-style hook-and-line hake",
+    group_custom_title: "Custom group size or dietary requirements?",
+    group_custom_desc:
+      "Our menus are tailored for company dinners and groups with flexible party sizes upon request. We can also adapt dishes for guests with allergies, intolerances or dietary preferences with prior notice. Inquire without obligation!",
+    btn_inquire_groups: "Inquire for group booking",
+    btn_call_groups: "Call +34 924 27 60 84",
+
     // Contact & Hours
     contact_eyebrow: "Get in Touch",
     contact_title: "Contact & Opening Hours",
@@ -336,6 +421,9 @@ const TRANSLATIONS = {
     faq_a5: "Yes, Avenida de Elvas has wide streets with plenty of free, easy street parking right around the restaurant.",
     faq_q6: "Where is the restaurant located in Badajoz?",
     faq_a6: "We are located at Avenida De Elvas 6, Local 22 (06006 Badajoz), just minutes away from the Badajoz University Hospital and the University of Extremadura (UEx) campus.",
+    faq_q7: "Does MariquinA offer set menus for company gatherings or groups?",
+    faq_a7:
+      "Yes, we offer two set menus for company dinners and celebrations in Badajoz (45€ and 50€ per guest, VAT included). They include shared starters (such as Maldonado Iberian charcuterie, king prawns or tuna tartare), choice of main course between Iberian meats and fresh fish, homemade desserts and drinks included (Verdejo wine, Viña Puebla, beer, soft drinks and cava). Coffee is not included, and group sizes are flexible upon prior booking.",
 
     // Reviews & Footer
     rev_eyebrow: "Customer Reviews",
